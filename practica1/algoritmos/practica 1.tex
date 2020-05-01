@@ -1,0 +1,715 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[activeacute,spanish]{babel}
+\usepackage{graphicx}
+\author{Miguel Angel Aguirre Olvera}
+\title{Practica 1}
+\usepackage{multicol}
+\DeclareGraphicsExtensions{.png}
+
+\begin{document}
+\maketitle
+
+\begin{multicols}{2}
+realizar los siguientes algoritmos y diagramas de flujo y NS
+\begin{center}
+\textbf{Problema 1}  
+\end{center}
+a) realizar una llamada telefonica
+
+pseudocodigo:
+
+inicio
+Escribir 'desbloquea el telefono'
+
+	Escribir 'abrir aplicacion de llamada'
+	
+	Escribir 'consulta tu saldo'
+	
+	Si tengo saldo Entonces
+	
+		Escribir 'teclea el numero telefonico'
+		
+		Si contesta Entonces
+		
+			Escribir 'puedes hablar'
+			
+		SiNo
+			Escribir 'llamada transferida al buzon'
+			
+			Si dejas mensaje Entonces
+			
+				Escribir 'no colgar y dejar mensaje'
+				
+			SiNo
+				Escribir 'colgar'
+			FinSi
+			
+			Si terminar Entonces
+			
+				Escribir 'colgar'
+
+			FinSi
+
+		FinSi
+
+	SiNo
+
+		Escribir "no puedes realizar la llamada"
+
+	FinSi
+
+Fin
+
+diagrama de flujo:
+
+
+\includegraphics[scale=.18]{llamada .png} 
+
+diagrama de NS:
+
+\includegraphics[scale=.17]{llamadans .png} 
+
+
+b) cocinar una tortilla 
+
+pseudocodigo 
+inicio 
+
+Escribir 'verificar que tengas tortillas'
+
+	Escribir 'verificar que tengas gas'
+
+	Si nohaygas Entonces
+
+		Escribir 'comprar tortillas'
+
+	SiNo
+
+		Escribir 'enciende la estufa'
+
+		Escribir 'colocar comal'
+
+		Escribir 'colocar a fuego lento'
+
+		Escribir 'colocar la tortilla'
+
+		Escribir 'voltear cada 2 minutos'
+		
+		Escribir 'sacar la tortilla y colocarla en cervilleta'
+	
+	FinSi
+	
+fin 
+
+diagrama de flujo
+
+\includegraphics[scale=.18]{tortillas.png} 
+	
+diagrama ns 
+
+\includegraphics[scale=.15]{tortillasns.png} 
+
+c)cambiar una llanta ponchada
+
+pseudocodigo: 
+
+inicio
+
+Escribir 'bajar del auto'
+
+	Escribir 'abir la cajuela'
+
+	Si hayherramienta Entonces
+
+		Escribir 'bajar la herramienta'
+
+		Escribir 'bajar la llanta de refaccion'
+
+		Escribir 'colocar el gato debajo del auto'
+
+		Escribir 'subir con el gato el auto'
+
+		Escribir 'quitar los pernos de la llanta'
+
+		Escribir 'retirar la llanta'
+
+		Escribir 'colocar la llanta de refaccion'
+
+		Escribir 'colarla de manera que quede igual con los hoyos'
+
+		Escribir 'apretar los pernos a la nueva llanta'
+
+		Escribir 'bajar el auto con el gato'
+
+		Escribir 'guardar la herramienta'
+
+	SiNo
+
+		Escribir 'llama a un mecanico o grua'
+
+	FinSi
+
+Fin
+
+	diagrama de flujo 
+
+\includegraphics[scale=.18]{cambiollanta.png} 	
+
+diagrama ns:
+ 
+\includegraphics[scale=.18]{cambiollantans.png} 
+
+
+D)freir un huevo 
+
+inicio
+
+Escribir 'abrir el refrigerador'
+
+	Si hayhuevos Entonces
+
+		Escribir 'sacarlos del refrigerador'
+
+		Escribir 'ir a la cocina'
+
+		Si haygas Entonces
+
+			Escribir 'prender la estufa'
+
+			Si hayaceite Entonces
+
+				Escribir 'seguir a lo siguiente'
+
+			SiNo
+
+				Escribir 'comprar aceite '
+
+			FinSi
+
+			Escribir 'colocar aceite en el sarten'
+
+			Escribir 'romper el huevo'
+
+			Escribir 'esperar a que se fria '
+
+			Escribir 'retirar el huevo'
+
+			Escribir 'colocarlo en un plato'
+
+			Escribir 'apagar estufa'
+
+		SiNo
+
+			Escribir 'ir a un restaurante'
+
+		FinSi
+
+	SiNo
+
+		Escribir ' comprar algo en la tienda preparado'
+
+	FinSi
+
+Fin
+
+diagrama de flujo:
+ 
+\includegraphics[scale=.1]{huevofrito.png}
+
+diagrma ns: 
+
+\includegraphics[scale=.1]{huevofritons.png}  
+
+E) hacer quesadilla 
+
+inicio
+
+Escribir 'verificar si tengo tortillas'
+
+	Escribir 'verificar si tengo queso o ingredientes necesarios'
+
+	Escribir 'calentar un comal a fuego lento'
+
+	Escribir 'colocar la tortilla y calentar 20 seg'
+
+	Escribir 'sacar la tortilla y colocarla en el plato'
+
+	Escribir 'tomar el queso y rellenar la tortilla'
+
+	Escribir 'colocar de nuevo la tortilla en el comal'
+
+	Si quesoderretido Entonces
+
+		Escribir 'sacar la quesadilla del comal cuando el queso este 
+		derretido '
+
+	SiNo
+
+		Escribir 'voltear la tortilla cada 2 min hasta que se derrita el 
+		queso'
+
+	FinSi
+
+Fin
+
+diagrama de flujo 
+
+\includegraphics[scale=.18]{quesadilla.png} 
+
+
+diagrama ns
+
+\includegraphics[scale=.15]{quesadillans.png}
+
+\begin{center}
+\textbf{ejercicio 2}
+\end{center}
+
+algoritmo suma resta multiplicacion y division 
+
+inicio 
+
+	Escribir 'dame un numero'
+
+	Leer a
+
+	Escribir 'dame un numero'
+
+	Leer b
+
+	suma <- a+b
+
+	resta <- a-b
+
+	multiplicacion <- a*b
+
+	division <- a/b
+
+	Escribir 'la suma es ',suma
+
+	Escribir 'la resta es: ',resta
+
+	Escribir 'la multiplicacion es: ',multiplicacion
+	
+	Escribir 'la diviion es: ',division
+
+Fin
+
+diagrama de flujo 
+ 
+\includegraphics[scale=.18]{sum-div-mult-resf.png} 
+	
+diagrama ns
+
+\includegraphics[scale=.18]{sum-div-mult-res.png} 
+
+\begin{center}
+\textbf{ejercicio 3}
+\end{center}	
+
+maximo comun divisor
+
+pseudocodigo
+
+	inicio
+	
+	Definir a,b,c,d,res Como Entero
+
+	Escribir 'dame el primer numero'
+
+	Leer a
+
+	Escribir 'dame el segundo numero'
+
+	Leer b
+
+	Si a>b Entonces
+
+		c <- a
+
+		d <- b
+
+	SiNo
+
+		c <- b
+
+		d <- a
+
+	FinSi
+
+	Mientras d!=0 Hacer
+
+		res <- d
+
+		d <- c MOD d
+
+		c <- res
+
+	FinMientras
+	
+	Escribir 'el mcd entre ',a,' y ',b,' es: ',res
+
+Fin
+
+diagrama de flujo
+
+\includegraphics[scale=.18]{mdc.png} 
+
+diagrama ns:
+
+\includegraphics[scale=.18]{mdcns.png}
+
+\begin{center}
+\textbf{problema 4}
+\end{center} 
+
+visualizar numeros leidos y terminar en cero
+
+pseudocodigo 
+
+inicio
+
+Definir a,b,c,d,e Como Entero
+
+	Escribir 'dame un numero'
+
+	Leer a
+
+	Escribir 'dame un numero'
+
+	Leer b
+
+	Escribir 'dame otro numero'
+
+	Leer c
+
+	Escribir 'dame el ultimo numero'
+
+	Leer d
+
+	Escribir 'los numeros que me diste son ',a,' ',b,' ',c,' y ',d
+
+	e <- 0
+
+	Si a+b+c+d=e Entonces
+
+	FinSi
+
+Fin
+
+diagrama de flujo 
+
+\includegraphics[scale=.18]{valorcero.png} 
+
+diagrama NS
+
+\includegraphics[scale=.18]{valorcerons.png} 
+
+
+\begin{center}
+\textbf{problema 5}
+\end{center}
+
+visualizar de 3 en 3 hasta el 99
+
+inicio
+
+Definir a,b Como Entero
+
+	Repetir
+
+		a <- a+3
+
+		Escribir a
+
+		b <- b+1
+
+	Hasta Que b=33
+
+Fin
+
+diagrama flujo 
+
+\includegraphics[scale=.18]{detresentres.png}
+
+diagrama ns
+
+\includegraphics[scale=.18]{detresentresns.png}  	
+
+\begin{center}
+\textbf{problema 6}
+\end{center}
+
+numero mayor
+
+pseudocodigo 
+
+inicio
+
+Definir a,b,c,d Como Entero
+
+	Escribir 'dame un numero'
+
+	Leer a
+
+	Escribir 'dame un numero'
+
+	Leer b
+
+	Escribir 'dame un numero'
+
+	Leer c
+
+	Escribir 'dame un numero'
+
+	Leer d
+
+	Si a>b Y a>c Y a>d Entonces
+
+		Escribir 'el mayor es ',a
+
+	FinSi
+
+	Si b>a Y b>c Y b>d Entonces
+
+		Escribir 'el mayor es',b
+
+	FinSi
+
+	Si c>a Y c>b Y c>d Entonces
+
+		Escribir 'el mayor es',c
+
+	FinSi
+
+	Si d>a Y d>b Y d>c Entonces
+
+		Escribir 'el mayor es ',d
+	
+	FinSi
+
+Fin
+
+diagrama de flujo
+
+\includegraphics[scale=.18]{mayornumero.png} 	
+	
+diagrama ns
+
+\includegraphics[scale=.18]{mayornumerons.png}
+
+\begin{center}
+\textbf{problema 7}
+\end{center} 	
+
+tres numeros diferentes y verificar si un numero con otro sumado da igual a cualquier otro numero dado 
+
+inicio
+
+	Definir a,b,c Como Entero
+
+	Escribir 'dame un numero'
+
+	Leer a
+
+	Escribir 'dame otro numero'
+
+	Leer b
+
+	Escribir 'dame otro numero'
+
+	Leer c
+
+	Si a+b=c Entonces
+
+		Escribir a,'+',b,'es igual a ',c
+
+	SiNo
+
+		Si a+c=b Entonces
+
+			Escribir a,'+',c,'es igual a ',b
+
+		SiNo
+
+			Si c+b=a Entonces
+
+				Escribir c,'+',b,'es igual a ',a
+
+			SiNo
+
+				Escribir 'ningun numero es igual a la suma'
+
+			FinSi
+
+		FinSi
+	
+	FinSi
+Fin
+
+diagrama de flujo 
+
+\includegraphics[scale=.1]{abyc.png}
+
+diagrama ns
+
+\includegraphics[scale=.09]{abycns.png}
+
+\begin{center}
+\textbf{problema 8}
+\end{center}
+  	numeros primos 
+pseudocodigo
+
+inicio
+
+Escribir 'dame un numero'
+
+	Leer n
+
+	Para x<-2 Hasta n Hacer
+
+		m <- 2
+
+		band <- verdadero
+
+		Mientras band=verdadero Y m<x Hacer
+
+			Si x MOD m=0 Entonces
+
+				band <- Falso
+
+			SiNo
+
+				m <- m+1
+
+			FinSi
+
+		FinMientras
+
+		Si band=verdadero Entonces
+
+			Escribir 'el numero ',x,'es primo'
+
+		FinSi
+	
+	FinPara
+Fin
+ 
+ diagrama de flujo
+ 
+\includegraphics[scale=.18]{primos.png} 
+
+diagrama ns
+
+\includegraphics[scale=.18]{primosns.png} 
+	
+\begin{center}
+\textbf{problema 9}
+\end{center}	
+	area de un triangulo 
+	
+	pseudocodigo 
+inicio
+
+Escribir 'dame la superficie de la base'
+
+	Leer b
+
+	Escribir 'dame la superficie de la altura'
+
+	Leer h
+
+	a = (b*h)/2
+	
+	Escribir a
+	
+Fin
+
+diagrama de flujo 
+
+\includegraphics[scale=.18]{triangulo.png}
+
+diagrama ns
+
+\includegraphics[scale=.18]{triangulons.png}
+
+\begin{center}
+\textbf{problema 10}
+\end{center}
+
+circunferencia y area de un circulo 
+
+pseudocodigo 
+
+inicio
+
+Escribir 'dame el radio'
+	
+	Leer r
+
+	circunferencia <- (r*2)*PI
+
+	Escribir 'la circunferencia es ',circunferencia
+
+	area <- (r*r)*PI
+
+	Escribir 'el area es ',area
+
+Fin
+  	
+diagrama de flujo 
+
+\includegraphics[scale=.18]{circulo.png} 
+
+diagrama ns 
+
+\includegraphics[scale=.18]{circulons.png} 	
+
+\begin{center}
+\textbf{problema 11}
+\end{center}
+
+salario semanal 
+
+pseudocodigo 
+
+inicio
+
+Definir nombre Como Caracter
+
+	Definir ph,jl,sb,st,isr Como Real
+
+	Escribir 'nombre del trabajador'
+
+	Leer nombre
+
+	Escribir 'horas trabajadas'
+
+	Leer jl
+
+	Escribir 'precio por hora'
+
+	Leer ph
+
+	sb <- jl*ph
+
+	isr <- sb*.10
+
+	st <- sb-isr
+	
+	Escribir ' el salario total es ',st
+
+Fin
+
+diagrama de flujo 
+
+\includegraphics[scale=.18]{salario.png}
+
+diagrama ns
+
+\includegraphics[scale=.18]{salarions.png}  
+	
+\end{multicols}
+\end{document}
